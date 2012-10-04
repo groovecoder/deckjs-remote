@@ -15,7 +15,7 @@
 	$[deck]('extend', 'remote', function(o){
 		var options = $.extend({}, config, o || {});
 		Modernizr.load({
-			load: options.server + (options.port ? ':'+options.port : '') + '/socket.io/socket.io.js',
+			load: '/deck/extensions/socket.io.js',
 			callback: function(){
 				setup(options);
 			}
@@ -102,7 +102,7 @@
 			var $container = $('<div id="deckjs-remote" />');
 
 			$container
-				.load(options.server + (options.port ? ':'+options.port : '') + '/deckjs-remote.html', callback || $.noop)
+				.load('/deckjs-remote.html', callback || $.noop)
 				.appendTo(document.body);
 		},
 		load: function(options, callback) {
