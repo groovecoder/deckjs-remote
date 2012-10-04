@@ -1,3 +1,0 @@
-[submodule "public/deck"]
-	path = public/deck
-	url = git://github.com/groovecoder/deck.js.git
