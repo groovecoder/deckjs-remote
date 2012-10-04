@@ -2,6 +2,26 @@
 
 This is a remote control plugin for [deck.js](http://imakewebthings.github.com/deck.js/)
 
+# Quickstart with Slide-casting Boilerplate Presentation
+
+Create new empty repo on github for your presentation.
+
+Clone template code into your repo:
+
+    git clone git://github.com/groovecoder/deckjs-remote.git <presentation_name>
+    cd <presentation_name>
+    npm install
+    git clone git://github.com/groovecoder/deck.js.git public/deck
+    cd public/deck
+    git remote add <username> git@github.com:username/<presentation_name>.git
+    git push -u <username> master
+
+Edit slides
+
+Run
+
+    cd ../.. && node server.js
+
 ## Installation
 
 Run the server: 
