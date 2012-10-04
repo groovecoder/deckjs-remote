@@ -15,7 +15,7 @@
 	$[deck]('extend', 'remote', function(o){
 		var options = $.extend({}, config, o || {});
 		Modernizr.load({
-			load: '/deck/extensions/socket.io.js',
+			load: '/deck/extensions/socket.io.min.js',
 			callback: function(){
 				setup(options);
 			}
