@@ -1,5 +1,5 @@
 {
-	"name": "deckjs-remote",
+	"name": "ttf-html5",
 	"version": "0.1.1",
 	"description": "Remote control for deck.js",
 	"author": "Chris Jaure (http://cleverchris.com)",
@@ -18,5 +18,5 @@
 	"engines": {
 		"node": ">= 0.6.0"
 	},
-	"subdomain": "deckjsremote"
+	"subdomain": "ttf-html5"
 }
