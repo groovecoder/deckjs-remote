@@ -10,17 +10,20 @@ Clone template code into your repo:
 
     git clone git://github.com/groovecoder/deckjs-remote.git <presentation_name>
     cd <presentation_name>
-    npm install
     git clone git://github.com/groovecoder/deck.js.git public/deck
     cd public/deck
-    git remote add <username> git@github.com:username/<presentation_name>.git
-    git push -u <username> master
+    git remote add <presentation_name> git@github.com:username/<presentation_name>.git
+    git push -u <presentation_name> master
 
 Edit slides
 
 Run
 
-    cd ../.. && node server.js
+    cd ../..
+    npm install
+    node server.js
+
+Open http://localhost/deck/
 
 ## Installation
 
