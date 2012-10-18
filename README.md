@@ -17,13 +17,17 @@ Clone template code into your repo:
 
 Edit slides
 
-Run
+## Run locally
 
     cd ../..
     npm install
     node server.js
+    http://localhost/deck/
 
-Open http://localhost/deck/
+## Deploy to nodejitsu
+
+    edit "name" and "subdomain" in package.json
+    jitsu deploy
 
 ## Installation
 
