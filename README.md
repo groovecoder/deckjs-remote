@@ -4,30 +4,45 @@ This is a remote control plugin for [deck.js](http://imakewebthings.github.com/d
 
 # Quickstart with Slide-casting Boilerplate Presentation
 
-Create new empty repo on github for your presentation.
+1. Clone boilerplate code::
 
-Clone template code into your repo:
+        git clone git://github.com/groovecoder/deckjs-remote.git <presentation_name>
+        cd <presentation_name>
+        git clone git://github.com/groovecoder/deck.js.git public/deck
 
-    git clone git://github.com/groovecoder/deckjs-remote.git <presentation_name>
-    cd <presentation_name>
-    git clone git://github.com/groovecoder/deck.js.git public/deck
-    cd public/deck
-    git remote add <presentation_name> git@github.com:username/<presentation_name>.git
-    git push -u <presentation_name> master
+2. Change deck remote to your own repo::
 
-Edit slides
+        cd public/deck
+        git remote add <presentation_name> git@github.com:username/<presentation_name>.git
+        git push -u <presentation_name> master
+
+3. Edit slides in `public/deck/index.html`
 
 ## Run locally
 
-    cd ../..
     npm install
     node server.js
-    http://localhost/deck/
+
+[http://localhost/deck/](http://localhost/deck/)
 
 ## Deploy to nodejitsu
 
-    edit "name" and "subdomain" in package.json
-    jitsu deploy
+1. Edit "name" and "subdomain" in package.json
+
+        sed -i 's/"deckjs-remote/"<presentation_name>/g' package.json
+
+2. Edit deckjs-remote server in public/deck/index.html
+
+        sed -i 's/localhost/<presentation_name>.jit.su/g' public/deck/index.html
+
+3. Deploy to nodejitsu
+
+        jitsu deploy
+
+http://`<presentation_name>`.jit.su/deck
+
+See [deckjs-remote Usage](https://github.com/chrisjaure/deckjs-remote/#usage)
+for instructions for controlling the presentation
 
 ## Installation
 
