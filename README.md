@@ -8,7 +8,7 @@ This is a remote control plugin for [deck.js](http://imakewebthings.github.com/d
 
         git clone git://github.com/groovecoder/deckjs-remote.git <presentation_name>
         cd <presentation_name>
-        git clone git://github.com/groovecoder/deck.js.git public/deck
+        git clone --recursive git://github.com/groovecoder/deck.js.git public/deck
 
 2. Change deck remote to your own repo::
 
